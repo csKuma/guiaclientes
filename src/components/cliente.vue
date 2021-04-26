@@ -2,7 +2,7 @@
   <div id="cliente">
     <p>nome:{{cliente.nome}}</p>
   <p v-if="showIdade==true">idade{{cliente.idade}}</p>
-  <p v-else>escondeu a idade  ww</p>
+  <p v-else>escondeu a idade </p>
   </div>
 </template>
 <script>
