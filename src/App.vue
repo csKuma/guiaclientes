@@ -1,25 +1,28 @@
 <template>
   <div id="app">
-    <h1>GUIA DE COISAS </h1>
-    <clientes/>
-    <produto/>
-  
+    <input type="text" v-model="clientevictor.nome" />
+    <cliente :cliente="clientevictor" :showIdade="false" />
   </div>
 </template>
 
 <script>
-  import clientes from "./components/clientes";
-import Produto from './components/produto.vue';
+import cliente from "./components/cliente.vue";
 export default {
-  name: 'App',
-  components:{
-    clientes,
-    Produto
-  }
-}
+  name: "App",
+  components: {
+    cliente,
+  },
+  data() {
+    return {
+      clientevictor: {
+        nome: "victor feio",
+        idade: 14
+      },
+    };
+  },
+};
 </script>
    
 
 <style>
-
 </style>
